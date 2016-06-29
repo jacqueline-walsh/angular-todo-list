@@ -1,0 +1,16 @@
+
+<widget xmlns="http://www.w3.org/ns/widgets" 
+	xmlns:gap="http://phonegap.com/ns/1.0" 
+		id="com.simplyweb.todolist" 
+			version="1.0.0">
+
+				
+  <name>ToDo List</name>
+  <description>A ToDo List of Tasks</description>
+  <author href="http://simplyweb.ie" email="jacqueline@simplyweb.ie">Simply Web Design</author>
+  <content src="index.html"/>
+  
+  <icon src="images/icon.png"/>
+  <preference name="fullscreen" value="true" />
+ 
+</widget>

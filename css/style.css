@@ -1,0 +1,50 @@
+/*
+*	Author:	Jacqueline Walsh
+*	Assignment:	WE4 Mobile	Web	Applications,	Digital	Skills	Academy
+*	Date	:	2016/06/25
+*	Ref:	own work
+*/
+
+
+/* center the copyright in footer */
+.copyright {
+	text-align: center;
+}
+
+/* align checkbox correctly */
+.ui-checkbox input, .ui-radio input {
+	margin-top: 0 !important;
+}
+
+/* align task to checkbox */
+span.ng-binding {
+    margin-left: 30px;
+}
+
+/* style the background of the todolist */
+#container {
+	background-image: url(../images/top-page.png);
+	background-repeat: repeat-x;
+	width: auto;
+	background-color: #fff;
+	border-radius: 5px;
+	min-height: 450px;
+	padding: 20px 15px 15px 10px;
+	box-shadow: 10px 10px 10px #ccc;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* style the header of the todolist */
+#title {
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 4em;
+	color: #ff0000;
+	text-align: center;
+}
+
+/* styling of icon */
+h1.ui-btn.ui-shadow.ui-corner-all.ui-icon-check.ui-btn-icon-notext.ui-title {
+    margin: 4% 50%;
+}
+

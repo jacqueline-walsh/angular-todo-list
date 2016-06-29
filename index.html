@@ -1,0 +1,77 @@
+<!--
+*	Author:	Jacqueline Walsh
+*	Assignment:	WE4 Mobile	Web	Applications,	Digital	Skills	Academy
+*	Date	:	2016/06/25
+*	Ref:	http://www.w3schools.com/angular/tryit.asp?filename=try_ng_todo_app (adapted for assignment)
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/themes/my-custom-theme.min.css" />
+  
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  
+  <link rel="stylesheet" href="jquery/jquery.mobile.structure-1.4.5.css" /> 
+  
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>  
+  
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+   
+  <script src="jquery/jquery.mobile-1.4.5.min.js"></script> 
+  
+  <script src="angular/angular.js"></script>	
+  <script src="angular/app.js"></script>
+	
+  <title>To Do List</title>
+	
+</head>
+
+<body ng-app="myApp" ng-controller="todoCtrl">
+
+<!--  ****************************** Start of first page  ****************************** -->
+<!-- start of page -->
+<div data-role="page" id="pageone">  
+
+<div data-role="header">
+	<h1 class="ui-btn ui-shadow ui-corner-all ui-icon-check ui-btn-icon-notext">tick</h1>
+</div><!-- /header -->
+
+<!-- content -->
+<div data-role="content">
+
+<!-- create form -->
+<form ng-submit="todoAdd()">  <!-- binding todoAdd function to form -->
+	<fieldset>
+		<!-- input field with directive todoInput stores input -->
+	    <input type="text" ng-model="todoInput" placeholder="Add New Task">  
+	    <input type="submit" value="Add Task"> 
+	</fieldset>
+</form>
+<!-- repeats - creates a loop to add further field inputs -->
+<div id="container">
+	<h1 id="title">{{title}}</h1>
+	<div ng-repeat="x in todoList"> 
+		<!-- checkbox type binds input form text for output -->
+	    <input type="checkbox" ng-model="x.done"><span ng-bind="x.todoText"></span>  
+	    <hr/>
+	</div>
+</div>
+<!-- creates delete button and creates remove function event listener -->
+<p><button ng-click="remove()">Delete Task</button></p>
+
+</div><!-- /content -->
+
+<!-- footer -->	
+<div data-role="footer" data-position="fixed"> <!-- home page footer -->
+	<p class="copyright">&copy; Jacqueline Walsh 2016</p>
+</div>
+<!-- /footer -->
+
+</div><!-- /page one -->
+	
+	
+</body>
+</html>
