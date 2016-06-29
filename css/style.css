@@ -37,8 +37,8 @@ span.ng-binding {
 
 /* style the header of the todolist */
 #title {
-	font-family: 'Reenie Beanie', cursive;
-	font-size: 4em;
+	font-family: monospace;
+	font-size: 3em;
 	color: #ff0000;
 	text-align: center;
 }
